@@ -12,7 +12,7 @@ const Projects = () => {
       <div className="projects-container">
         {PROJECT_DATA.map((projet) => (
             <div key={projet.id} className='proj'>
-                <h3><a href={projet.source}>{projet.name}</a></h3>
+                <h3><a href={projet.source} target="_blank" >{projet.name}</a></h3>
                 <img src={projet.img} alt={projet.name} />
             </div>
         ))}
